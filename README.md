@@ -66,8 +66,32 @@ To see how you can add code snippets, see below:
     background: white;
 }
 ```
-```js
+```css
+    .footer-btn {
+        animation: pulse 2s infinite;
+    }
 
+    .footer-btn:hover {
+        animation: none;
+    }
+
+    @keyframes pulse {
+        0% {
+            transform: scale(0.95);
+            box-shadow: 0 0 0 0 hsl(322, 100%, 66%, .7);
+        }
+
+        70% {
+            transform: scale(1);
+            box-shadow: 0 0 0 2vw hsl(322, 100%, 66%, 0);
+        }
+
+        100% {
+            transform: scale(0.95);
+            box-shadow: 0 0 0 0 hsl(322, 100%, 66%, 0);
+        }
+    }
+}
 ```
 
 ## Author
