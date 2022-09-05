@@ -24,19 +24,19 @@ h2 {
     color: hsl(192, 100%, 9%);
 }
 
-p {
+p,
+a {
     font-family: 'Open Sans', sans-serif;
 }
 
 a {
+    color: inherit;
     text-decoration: none;
-    color: hsl(193, 100%, 96%);
-    font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
 }
 
-button {
-    cursor: pointer;
+a:hover,
+a:active {
+    opacity: .8;
 }
 
 header {
@@ -58,7 +58,7 @@ header {
     height: 2vw;
 }
 
-.head-1 a button {
+.head-1 a {
     padding: .75vw 3.5vw;
     border: none;
     background-color: white;
@@ -97,8 +97,12 @@ header {
     color: hsl(192, 100%, 9%);
 }
 
-.head-2-text a button {
-    padding: .8vw 3.75vw;
+.head-2-text a {
+    width: 15vw;
+    height: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 1.5vw;
     border: none;
     font-family: 'Poppins', sans-serif;
@@ -178,18 +182,43 @@ main {
     background: white;
 }
 
-.ftr-CTO a button {
-    padding: 20px 90px;
+.ftr-CTO a {
+    padding: 1.2vw 4.25vw;
     border: none;
     background-color: white;
     border-radius: 40px;
-    margin-top: 30px;
+    margin-top: 1.4vw;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    font-size: 16px;
+    font-size: .8vw;
     box-shadow: 0 .4vw .75vw -.4vw hsl(208, 11%, 55%);
     background: hsl(322, 100%, 66%);
     color: hsl(193, 100%, 96%);
+}
+
+.ftr-btn {
+    animation: pulse 2s infinite;
+}
+
+.ftr-btn:hover {
+    animation: none;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 hsl(322, 100%, 66%, .7);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 15px hsl(322, 100%, 66%, 0);
+    }
+
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 hsl(322, 100%, 66%, 0);
+    }
 }
 
 footer {
@@ -276,35 +305,6 @@ ion-icon {
     font-weight: 300;
 }
 
-button:hover,
-button:active {
-    opacity: .8;
-}
-
-.footer-btn {
-    animation: pulse 2s infinite;
-}
-
-.footer-btn:hover {
-    animation: none;
-}
-
-@keyframes pulse {
-    0% {
-        transform: scale(0.95);
-        box-shadow: 0 0 0 0 hsl(322, 100%, 66%, .7);
-    }
-
-    70% {
-        transform: scale(1);
-        box-shadow: 0 0 0 15px hsl(322, 100%, 66%, 0);
-    }
-
-    100% {
-        transform: scale(0.95);
-        box-shadow: 0 0 0 0 hsl(322, 100%, 66%, 0);
-    }
-}
 
 @media screen and (max-width: 1440px) {
 
@@ -329,7 +329,7 @@ button:active {
         font-size: 1.9vw;
     }
 
-    .ftr-CTO a button {
+    .ftr-CTO a {
         padding: 1.5vw 6.5vw;
         border-radius: 3vw;
         margin-top: 2.25vw;
@@ -361,7 +361,7 @@ button:active {
         line-height: 2.25vw;
     }
 
-    h3 {
+    h2 {
         font-size: 2.2vw;
         margin-bottom: 1.7vw;
     }
@@ -431,7 +431,7 @@ button:active {
         height: 4.25vw;
     }
 
-    .head-1 a button {
+    .head-1 a {
         padding: 1.25vw 7vw;
         font-size: 2.75vw;
     }
@@ -463,10 +463,11 @@ button:active {
         font-size: 4.2vw;
     }
 
-    .head-2-text a button {
-        padding: 3vw 17vw;
+    .head-2-text a {
+        width: 60vw;
+        height: 10vw;
         border-radius: 6vw;
-        font-size: 3.1vw;
+        font-size: 2.85vw;
     }
 
     .head-2-img img {
@@ -487,10 +488,10 @@ button:active {
     .main-2,
     .main-3 {
         flex-direction: column;
-        height: 135vw;
+        height: 140vw;
         width: 100%;
         padding: 7.5vw 0;
-        padding-top: 12.5vw;
+        padding-top: 13vw;
         padding-left: 0;
         box-shadow: 0 0 8px -4px hsl(208, 11%, 55%);
     }
@@ -513,7 +514,7 @@ button:active {
         width: 75%;
     }
 
-    h3 {
+    h2 {
         text-align: center;
         font-size: 6vw;
         margin-bottom: 4vw;
@@ -542,7 +543,7 @@ button:active {
         font-size: 4.5vw;
     }
 
-    .ftr-CTO a button {
+    .ftr-CTO a {
         padding: 3vw 12vw;
         border-radius: 5vw;
         font-size: 2.5vw;
@@ -640,11 +641,11 @@ button:active {
         font-size: 3vw;
     }
 
-    .footer-btn {
+    .ftr-btn {
         animation: pulse 2s infinite;
     }
 
-    .footer-btn:hover {
+    .ftr-btn:hover {
         animation: none;
     }
 
@@ -675,7 +676,7 @@ button:active {
         height: 21px;
     }
 
-    .head-1 a button {
+    .head-1 a {
         padding: 7px 35px;
         font-size: 14px;
     }
@@ -695,7 +696,7 @@ button:active {
         height: 6vw;
     }
 
-    .head-1 a button {
+    .head-1 a {
         padding: 1.5vw 7.5vw;
         font-size: 3.75vw;
     }
