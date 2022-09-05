@@ -46,8 +46,6 @@ I learnt about responsiveness; how to make a site look good on a wide range of s
 
 I learnt css animations and used it to ass a pulsing effect to the CTO at the bottom of the screen, also learnt about javascript DOM Manipulation and used it to add a hover animation to the "feature blocks".
 
-To see how you can add code snippets, see below:
-
 ```css
 .main-4 {
     display: flex;
