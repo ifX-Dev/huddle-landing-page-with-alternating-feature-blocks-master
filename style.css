@@ -1,0 +1,703 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@300;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font-size: 18px;
+    position: relative;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: hsl(193, 100%, 96%);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+button {
+    cursor: pointer;
+}
+
+header {
+    background: hsl(193, 100%, 96%);
+    background-image: url(bg-hero-desktop.svg);
+    display: flex;
+    flex-direction: column;
+}
+
+.head-1 {
+    padding: 1.5vw 5vw;
+    height: 7.5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head-1 img {
+    height: 2vw;
+}
+
+.head-1 a button {
+    padding: .75vw 3.5vw;
+    border: none;
+    background-color: white;
+    border-radius: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: .7vw;
+    box-shadow: 0 .4vw .75vw -.4vw hsl(208, 11%, 55%);
+}
+
+.head-2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5vw 5vw;
+}
+
+.head-2-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* margin-right: 3.5vw; */
+    width: 35vw;
+}
+
+.head-2-text h1 {
+    font-size: 3vw;
+    line-height: 3.75vw;
+    margin-bottom: 1.3vw;
+    color: hsl(192, 100%, 9%);
+}
+
+.head-2-text p {
+    line-height: 1.4vw;
+    margin-bottom: 1.8vw;
+    font-size: 1vw;
+    color: hsl(192, 100%, 9%);
+}
+
+.head-2-text a button {
+    padding: .8vw 3.75vw;
+    border-radius: 1.5vw;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: .7vw;
+    background: hsl(322, 100%, 66%);
+    color: hsl(193, 100%, 96%);
+    margin-left: .5vw;
+    box-shadow: 0 .4vw .75vw -.4vw hsl(208, 11%, 55%);
+}
+
+.head-2-img img {
+    height: 35vw;
+}
+
+main {
+    width: 100%;
+    padding: 7.5vw 7.5vw;
+    padding-bottom: 15vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-1,
+.main-2,
+.main-3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 22.5vw;
+    border: none;
+    border-radius: 15px;
+    padding: 0 3.75vw;
+    padding-left: 11.25vw;
+    margin: 2vw 0;
+    box-shadow: 0 0 8px -4px hsl(208, 11%, 55%);
+}
+
+.main-1-img img,
+.main-2-img img,
+.main-3-img img {
+    height: 17.5vw;
+}
+
+.main-1-text,
+.main-2-text,
+.main-3-text {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: hsl(192, 100%, 9%);
+}
+
+.main-1-text p,
+.main-2-text p,
+.main-3-text p {
+    color: hsl(208, 11%, 55%);
+    line-height: 27.5px;
+}
+
+.main-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 300px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 0 8px -4px hsl(208, 11%, 55%);
+    position: absolute;
+    bottom: 425px;
+    right: 25%;
+    z-index: 10;
+    background: white;
+}
+
+.main-4 a button {
+    padding: 20px 90px;
+    border: none;
+    background-color: white;
+    border-radius: 40px;
+    margin-top: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    box-shadow: 0 .4vw .75vw -.4vw hsl(208, 11%, 55%);
+    background: hsl(322, 100%, 66%);
+    color: hsl(193, 100%, 96%);
+}
+
+footer {
+    background: hsl(192, 100%, 9%);
+    color: hsl(193, 100%, 96%);
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 525px;
+    padding-bottom: 10px;
+}
+
+.foot-1 {
+    width: 25%;
+    padding-bottom: 60px;
+}
+
+.foot-logo {
+    margin-bottom: 10px;
+}
+
+.foot-logo img {
+    height: 32.5px;
+}
+
+.foot-2,
+.foot-3,
+.foot-4 {
+    height: 260px;
+}
+
+.location,
+.phone,
+.email {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.location img,
+.phone img,
+.email img {
+    height: 15px;
+    margin-right: 30px;
+}
+
+.location p,
+.phone p,
+.email p {
+    font-size: 15px;
+}
+
+.foot-2 ul,
+.foot-3 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.foot-2 ul li,
+.foot-3 ul li {
+    line-height: 40px;
+}
+
+.foot-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.socials {
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+ion-icon {
+    font-size: 25px;
+}
+
+.copyright p {
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+button:hover,
+button:active {
+    opacity: .8;
+}
+
+.footer-btn {
+    animation: pulse 2s infinite;
+}
+
+.footer-btn:hover {
+    animation: none;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 hsl(322, 100%, 66%, .7);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 15px hsl(322, 100%, 66%, 0);
+    }
+
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 hsl(322, 100%, 66%, 0);
+    }
+}
+
+@media screen and (max-width: 1440px) {
+
+    .main-1,
+    .main-2,
+    .main-3 {
+        padding-left: 7vw;
+    }
+
+    .main-1-text,
+    .main-2-text,
+    .main-3-text {
+        width: 50%;
+    }
+
+    .main-4 {
+        height: 18vw;
+        bottom: 30vw;
+    }
+
+    .main-4 h2 {
+        font-size: 1.9vw;
+    }
+
+    .main-4 a button {
+        padding: 1.5vw 6.5vw;
+        border-radius: 3vw;
+        margin-top: 2.25vw;
+        font-size: 1vw;
+    }
+
+    footer {
+        height: 37vw;
+    }
+
+    .foot-logo img {
+        height: 2.5vw;
+    }
+}
+
+@media screen and (max-width: 1295px) {
+    main {
+        padding: 16vw 5vw;
+        padding-top: 8vw;
+    }
+}
+
+@media screen and (max-width: 1215px) {
+
+    .main-1-text p,
+    .main-2-text p,
+    .main-3-text p {
+        font-size: 1.42vw;
+        line-height: 2.25vw;
+    }
+
+    h3 {
+        font-size: 2.2vw;
+        margin-bottom: 1.7vw;
+    }
+
+    .foot-1 {
+        width: 25%;
+        padding-bottom: 4vw;
+    }
+
+    .foot-logo {
+        margin-bottom: 1vw;
+    }
+
+    .foot-2,
+    .foot-3,
+    .foot-4 {
+        height: 22vw;
+    }
+
+    .location,
+    .phone,
+    .email {
+        padding: 1.1vw 0;
+    }
+
+    .location img,
+    .phone img,
+    .email img {
+        height: 1.2vw;
+        margin-right: 2vw;
+    }
+
+    .location p,
+    .phone p,
+    .email p {
+        font-size: 1.25vw;
+    }
+
+    .foot-2 ul li,
+    .foot-3 ul li {
+        line-height: 3.5vw;
+    }
+
+    .socials {
+        width: 10vw;
+    }
+
+    ion-icon {
+        font-size: 2vw;
+    }
+
+    .copyright p {
+        font-size: 1vw;
+    }
+
+    a {
+        font-size: 1.2vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .head-1 {
+        height: 16vw;
+    }
+
+    .head-1 img {
+        height: 4.25vw;
+    }
+
+    .head-1 a button {
+        padding: 1.25vw 7vw;
+        font-size: 2.75vw;
+    }
+
+    .head-2 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10vw 10vw;
+    }
+
+    .head-2-text {
+        align-items: center;
+        width: 100%;
+        margin-bottom: 15vw;
+    }
+
+    .head-2-text h1 {
+        text-align: center;
+        font-size: 7vw;
+        line-height: 10vw;
+        margin-bottom: 5vw;
+    }
+
+    .head-2-text p {
+        text-align: center;
+        line-height: 6vw;
+        margin-bottom: 7.5vw;
+        font-size: 4.2vw;
+    }
+
+    .head-2-text a button {
+        padding: 3vw 17vw;
+        border-radius: 6vw;
+        font-size: 3.1vw;
+    }
+
+    .head-2-img img {
+        height: auto;
+        width: 100%;
+    }
+
+    main {
+        width: 100%;
+        padding: 7.5vw 3vw;
+        padding-bottom: 15vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-1,
+    .main-2,
+    .main-3 {
+        flex-direction: column;
+        height: 135vw;
+        width: 100%;
+        padding: 7.5vw 0;
+        padding-top: 12.5vw;
+        padding-left: 0;
+        box-shadow: 0 0 8px -4px hsl(208, 11%, 55%);
+    }
+
+    .main-1,
+    .main-3 {
+        flex-direction: column-reverse;
+    }
+
+    .main-1-img img,
+    .main-2-img img,
+    .main-3-img img {
+        height: 60vw;
+    }
+
+    .main-1-text,
+    .main-2-text,
+    .main-3-text {
+        height: auto;
+        width: 75%;
+    }
+
+    h3 {
+        text-align: center;
+        font-size: 6vw;
+        margin-bottom: 4vw;
+    }
+
+    .main-1-text p,
+    .main-2-text p,
+    .main-3-text p {
+        text-align: center;
+        font-size: 3.75vw;
+        line-height: 6.25vw;
+    }
+
+    main {
+        padding-bottom: 45vw;
+    }
+
+    .main-4 {
+        width: 92%;
+        height: 40vw;
+        bottom: 175vw;
+        right: 4%;
+    }
+
+    .main-4 h2 {
+        font-size: 4.5vw;
+    }
+
+    .main-4 a button {
+        padding: 3vw 12vw;
+        border-radius: 5vw;
+        font-size: 2.5vw;
+    }
+
+    footer {
+        background: hsl(192, 100%, 9%);
+        color: hsl(193, 100%, 96%);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        height: 190vw;
+        padding-bottom: 10vw;
+    }
+
+    .foot-1 {
+        width: 100%;
+        padding-bottom: 12.5vw;
+        padding-top: 25vw;
+        padding-left: 2vw;
+    }
+
+    .foot-logo {
+        margin-bottom: 4.5vw;
+    }
+
+    .foot-logo img {
+        height: 7.5vw;
+    }
+
+    .foot-2,
+    .foot-3 {
+        height: 21.5vw;
+    }
+
+    .foot-2 {
+        margin-bottom: 4.6vw;
+    }
+
+    .foot-3 {
+        margin-bottom: 4vw;
+    }
+
+    .location,
+    .phone,
+    .email {
+        padding: 1.5vw 0;
+    }
+
+    .location img,
+    .phone img,
+    .email img {
+        height: 3vw;
+        margin-right: 5vw;
+    }
+
+    .location p,
+    .phone p,
+    .email p {
+        font-size: 4vw;
+    }
+
+    .foot-2 ul li,
+    .foot-3 ul li {
+        line-height: 9vw;
+        padding-left: 2vw;
+    }
+
+    a {
+        font-size: 4vw;
+    }
+
+    .foot-4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 17.5vw;
+        margin-top: 14vw;
+    }
+
+    .socials {
+        width: 35vw;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    ion-icon {
+        font-size: 6.5vw;
+    }
+
+    .copyright p {
+        font-size: 3vw;
+    }
+
+    .footer-btn {
+        animation: pulse 2s infinite;
+    }
+
+    .footer-btn:hover {
+        animation: none;
+    }
+
+    @keyframes pulse {
+        0% {
+            transform: scale(0.95);
+            box-shadow: 0 0 0 0 hsl(322, 100%, 66%, .7);
+        }
+
+        70% {
+            transform: scale(1);
+            box-shadow: 0 0 0 2vw hsl(322, 100%, 66%, 0);
+        }
+
+        100% {
+            transform: scale(0.95);
+            box-shadow: 0 0 0 0 hsl(322, 100%, 66%, 0);
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .head-1 {
+        height: 85px;
+    }
+
+    .head-1 img {
+        height: 21px;
+    }
+
+    .head-1 a button {
+        padding: 7px 35px;
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    header {
+        background-image: url(bg-hero-mobile.svg);
+    }
+
+    .head-1 {
+        height: 20vw;
+    }
+
+    .head-1 img {
+        height: 6vw;
+    }
+
+    .head-1 a button {
+        padding: 1.5vw 7.5vw;
+        font-size: 3.75vw;
+    }
+}
