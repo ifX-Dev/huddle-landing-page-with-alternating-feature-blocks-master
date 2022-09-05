@@ -13,9 +13,15 @@ body {
 }
 
 h1,
-h2,
-h3 {
+h2 {
     font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: hsl(192, 100%, 9%);
 }
 
 p {
@@ -148,13 +154,6 @@ main {
     flex-direction: column;
 }
 
-h3 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    font-weight: 700;
-    color: hsl(192, 100%, 9%);
-}
-
 .main-1-text p,
 .main-2-text p,
 .main-3-text p {
@@ -162,7 +161,7 @@ h3 {
     line-height: 27.5px;
 }
 
-.main-4 {
+.ftr-CTO {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -179,7 +178,7 @@ h3 {
     background: white;
 }
 
-.main-4 a button {
+.ftr-CTO a button {
     padding: 20px 90px;
     border: none;
     background-color: white;
@@ -321,16 +320,16 @@ button:active {
         width: 50%;
     }
 
-    .main-4 {
+    .ftr-CTO {
         height: 18vw;
         bottom: 30vw;
     }
 
-    .main-4 h2 {
+    .ftr-CTO h2 {
         font-size: 1.9vw;
     }
 
-    .main-4 a button {
+    .ftr-CTO a button {
         padding: 1.5vw 6.5vw;
         border-radius: 3vw;
         margin-top: 2.25vw;
@@ -532,18 +531,18 @@ button:active {
         padding-bottom: 45vw;
     }
 
-    .main-4 {
+    .ftr-CTO {
         width: 92%;
         height: 40vw;
         bottom: 175vw;
         right: 4%;
     }
 
-    .main-4 h2 {
+    .ftr-CTO h2 {
         font-size: 4.5vw;
     }
 
-    .main-4 a button {
+    .ftr-CTO a button {
         padding: 3vw 12vw;
         border-radius: 5vw;
         font-size: 2.5vw;
