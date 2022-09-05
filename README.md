@@ -11,12 +11,7 @@ This is a solution to the [Huddle landing page with alternating feature blocks c
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -49,6 +44,8 @@ Users should be able to:
 
 I learnt about responsiveness; how to make a site look good on a wide range of screens from desktop to mobile, also learnt how to use position absolute to position elements, div on any part of a website.
 
+I learnt css animations and used it to ass a pulsing effect to the CTO at the bottom of the screen, also learnt about javascript DOM Manipulation and used it to add a hover animation to the "feature blocks".
+
 To see how you can add code snippets, see below:
 
 ```css
@@ -68,6 +65,9 @@ To see how you can add code snippets, see below:
     z-index: 10;
     background: white;
 }
+```
+```js
+
 ```
 
 ## Author
